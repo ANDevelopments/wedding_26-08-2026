@@ -29,7 +29,7 @@ const initFadeInAnimation = () => {
           trigger: element,
           start: "top 80%",
           end: "bottom 80%",
-          scrub: 2,
+          scrub: 1,
           toggleActions: "play none none reverse",
         },
       });
