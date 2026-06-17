@@ -213,6 +213,20 @@ span {
     position: relative;
     z-index: -1;
 }
+.invitation_media::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/icons/heart.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size:contain;
+  opacity: 0.3;
+  z-index: -2;
+}
 .invitation_media_wrapper {
     display: flex;
     align-items: center;
@@ -226,11 +240,11 @@ span {
 }
 
 .invitation_media_image:nth-child(1) {
-    height: 30rem;
+    height: 32rem;
     width: auto;
 }
 .invitation_media_image:nth-child(2) {
-    height: 30rem;
+    height: 32rem;
     width: auto;
     margin-left: 20rem;
 }
@@ -535,6 +549,15 @@ span {
     .invitation_p, .timeline_list, .banket_p, .dresscode_p, .wishlist_p, .rsvp_p {
         width: 90%;
     }
+    .invitation_media_image:nth-child(1) {
+        height: 50rem;
+        width: auto;
+    }
+    .invitation_media_image:nth-child(2) {
+        height: 50rem;
+        width: auto;
+        margin-left: 20rem;
+}
     .banket_map_wrapper {
         width: 80%;
     }

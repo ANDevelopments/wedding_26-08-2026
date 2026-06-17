@@ -21,15 +21,15 @@ gsap.registerPlugin(ScrollTrigger);
 const initFadeInAnimation = () => {
     const fadeElements = document.querySelectorAll(".fade-in");
     fadeElements.forEach((element) => {
-      gsap.set(element, { opacity: 0, y: 100, duration: 1, });
+      gsap.set(element, { opacity: 0, y: 100});
       gsap.to(element, {
         opacity: 1,
         y: 0,
-        duration: 1,
         scrollTrigger: {
           trigger: element,
           start: "top 80%",
           end: "bottom 80%",
+          scrub: 2,
           toggleActions: "play none none reverse",
         },
       });
